@@ -25,7 +25,7 @@ src // Pasta Raiz do projeto
 
 ## Typings
 
-A tipagem é um recurso para auxiliar o desenvolvedor identificar erros em tempo de desenvolvimento antes mesmo do build. Segue abaixo algumas implementação de interfaces usados no projeto.
+A tipagem é um recurso para auxiliar o desenvolvedor identificar erros em tempo de desenvolvimento antes mesmo do build. Apenda mais sobre interfaces [aqui](Interfaces.md#Interfaces)!
 
 ## Padronização
 
