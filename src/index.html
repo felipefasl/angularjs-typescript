@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="indexApp">
+
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Angular+Typescript</title>
+
+    <!-- angulajs -->
+    <link rel="stylesheet" href="https://code.angularjs.org/1.7.9/angular-csp.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body class="ng-cloak">
+
+    <section class="container p-0 h-100">
+        <ng-include src="'incl.menu.tpl.html'"></ng-include>
+
+        <div class="card m-1 p-0">
+            <div class="card-body">
+                <ng-view></ng-view>
+            </div>
+        </div>
+
+        <ng-include src="'incl.rodape.tpl.html'"></ng-include>
+    </section>
+
+    <!-- angulajs -->
+    <script src="https://code.angularjs.org/1.7.9/angular.js"></script>
+    <script src="https://code.angularjs.org/1.7.9/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.7.9/angular-sanitize.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d3675ffc1a.js" crossorigin="anonymous"></script>
+
+    <!-- linkedin -->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+    <!-- aplicação -->
+    <script src="app/spas/home/home.app.js"></script>
+    <script src="app/spas/home/home.controller.js"></script>
+
+    <script src="app/spas/links-uteis/links-uteis.app.js"></script>
+    <script src="app/spas/links-uteis/links-uteis.controller.js"></script>
+    <script src="app/spas/links-uteis/componente-links-uteis/componente-links-uteis.controller.js"></script>
+    <script src="app/spas/links-uteis/componente-links-uteis/componente-links-uteis.component.js"></script>
+
+    <script src="index.app.js"></script>
+
+</body>
+
+</html>

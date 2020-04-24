@@ -1,6 +1,6 @@
 {
   "name": "angularjs-typescript",
-  "version": "0.0.1",
+  "version": "1.0.0-beta",
   "description": "Projeto FRONT-END Angularjs+Typescript com exemplos e explicações.",
   "scripts": {
     "test": "karma start karma.conf.js"
@@ -12,10 +12,8 @@
   "devDependencies": {
     "@babel/polyfill": "^7.4.4",
     "@types/angular": "^1.6.56",
-    "@types/angular-mocks": "^1.5.11",
     "@types/angular-route": "^1.3.4",
     "@types/angular-sanitize": "^1.7.0",
-    "@types/jasmine": "^2.8.16",
     "@types/node": "^12.0.2",
     "@types/typeahead": "^0.11.32",
     "@types/underscore": "^1.8.7",
@@ -26,24 +24,20 @@
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-karma": "^2.0.0",
     "grunt-timer": "^0.6.0",
     "grunt-ts": "^6.0.0-beta.10",
     "grunt-tslint": "^4.0.0",
-    "jasmine-core": "^2.5.2",
     "jit-grunt": "^0.10.0",
-    "karma": "^1.7.1",
-    "karma-coverage": "^1.1.1",
-    "karma-jasmine": "^1.0.2",
-    "karma-phantomjs-launcher": "^1.0.2",
-    "karma-typescript": "^3.0.8",
-    "phantomjs": "^2.1.7",
     "tsc-watch": "^1.0.21",
     "tslint": "^4.3.1",
-    "typescript": "3.1.6"
+    "typescript": "^3.8.3"
   },
   "main": "Gruntfile.js",
-  "author": "Felipe Lima - linkedin.com/in/felipeaslima",
+  "author": "Felipe Lima <linkedin.com/in/felipeaslima>",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "@popperjs/core": "^2.3.3",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.0.0"
+  }
 }

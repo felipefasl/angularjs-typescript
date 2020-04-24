@@ -1,0 +1,14 @@
+<!-- Saiba mais sobre html5 aqui:https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5 -->
+<!-- Saiba mais sobre bootstrap aqui: https://getbootstrap.com.br/docs/4.1 -->
+
+<!-- Referências angularjs: 
+    ng-controller                  | https://devdocs.io/angularjs~1.7/api/ng/directive/ngcontroller
+    interpolação("{{vm.titulo}}")  | https://devdocs.io/angularjs~1.7/guide/interpolation
+    components                     | https://devdocs.io/angularjs~1.7/guide/component
+-->
+
+<div ng-controller="LinksUteisController as vm">
+
+    <h3 class="card-title text-center">{{vm.titulo}}</h3>
+    <componente-links-uteis lista-links="vm.listaLinks"></componente-links-uteis>
+</div>

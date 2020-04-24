@@ -4,7 +4,8 @@
         "target": "es6",
         "alwaysStrict": true,
         "rootDir": "src",
-        "sourceMap": true
+        "outDir": "www",
+        "sourceMap": false
     },
     "include": [
         "src/**/*.ts"

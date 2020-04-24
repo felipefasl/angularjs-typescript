@@ -1,0 +1,13 @@
+<!-- Saiba mais sobre html5 aqui:https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5 -->
+
+<!-- Referências angularjs: 
+    ng-repeat                  | https://devdocs.io/angularjs~1.7/api/ng/directive/ngrepeat
+    interpolação("{{vm.titulo}}")  | https://devdocs.io/angularjs~1.7/guide/interpolation
+    components                     | https://devdocs.io/angularjs~1.7/guide/component
+-->
+
+<ul>
+    <li ng-repeat="link in vm.listaLinks">
+        <a href="{{link.caminho}}" target="_blank">{{link.descricao}}</a>
+    </li>
+</ul>

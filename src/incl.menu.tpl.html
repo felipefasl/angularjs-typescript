@@ -1,0 +1,24 @@
+<!-- Saiba mais sobre html5 aqui:https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5 -->
+<!-- Saiba mais sobre bootstrap aqui: https://getbootstrap.com.br/docs/4.1 -->
+
+<!-- Referências angularjs: 
+    ng-class : https://devdocs.io/angularjs~1.7/api/ng/directive/ngclass
+-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item" ng-class="{'active': rotaAtual==='/'}">
+                <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+
+            <li class="nav-item" ng-class="{'active': rotaAtual==='/links-uteis'}">
+                <a class="nav-link" href="#links-uteis">Links Úteis</a>
+            </li>
+           
+        </ul>
+    </div>
+</nav>
