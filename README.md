@@ -3,9 +3,9 @@ Projeto Angularjs+Typescript com exemplos e explicações.
 
 ## Versões
 
-| Versão | Notas | Extras |
+| Versão | Notas | Extras | Apps Desenvolvimento |
 | ------ | ------ | ------ | 
-| 0.0.1 | Apps, Rotas, Controladores, Componentes | Bootstrap, fontawesome |
+| 0.0.1 | Apps, Rotas, Controladores, Componentes | Bootstrap, fontawesome | indexApp, linksUteisApp, homeApp |
 
 ## Estrutura
 O projeto segue um padrão de organização de arquivos para facilitar o compartilhamento de código e otimização na manutenção.
