@@ -27,7 +27,7 @@ var carro = {
 };
 ```
 
-É possível criar uma tipagem para uma variável sem o uso de interfaces, conforme o exemplo em TypeScript a seguir:
+É possível criar uma tipagem para uma variável criar uma interface, conforme o exemplo em TypeScript a seguir:
 
 ```ts
 let carro: { marca: string; ano: number; acelerar: () => string; } = {
