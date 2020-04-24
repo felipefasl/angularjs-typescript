@@ -1,18 +1,19 @@
 // Saiba mais sobre controladores em: https://devdocs.io/angularjs~1.7/guide/controller
 
-class ComponenteLinksUteisComponentController implements ng.IComponentController {
+namespace app.links_uteis {
 
-    /**
-     * Variável recebida via bind do componente-exemplo
-     */
-    listaLinks: { descricao: string, caminho: string }[];
+    export class ComponenteLinksUteisComponentController implements ng.IComponentController {
 
-    static $inject = [];
+        /**
+         * Variável recebida via bind do componente-exemplo
+         */
+        listaLinks: { descricao: string, caminho: string }[];
 
-    constructor() { }
+        static $inject = [];
+
+        constructor() { }
+    }
+
+    angular.module('linksUteisApp')
+        .controller('ComponenteLinksUteisComponentController', ComponenteLinksUteisComponentController);
 }
-
-
-
-angular.module('linksUteisApp')
-    .controller('ComponenteLinksUteisComponentController', ComponenteLinksUteisComponentController);

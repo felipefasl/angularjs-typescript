@@ -1,16 +1,19 @@
 // Saiba mais sobre components em: https://devdocs.io/angularjs~1.7/guide/component
 
-function getOptionsComponenteExemplo(): ng.IComponentOptions {
+namespace app.links_uteis {
 
-    return {
-        bindings: {
-            listaLinks: '<'
-        },
-        templateUrl: './app/spas/links-uteis/componente-links-uteis/componente-links-uteis.tpl.html',
-        controller: 'ComponenteLinksUteisComponentController as vm'
-    };
+    function getOptionsComponenteExemplo(): ng.IComponentOptions {
+
+        return {
+            bindings: {
+                listaLinks: '<'
+            },
+            templateUrl: './app/spas/links-uteis/componente-links-uteis/componente-links-uteis.tpl.html',
+            controller: 'ComponenteLinksUteisComponentController as vm'
+        };
+    }
+
+    angular.module('linksUteisApp')
+        .component('componenteLinksUteis', getOptionsComponenteExemplo());
+
 }
-
-
-angular.module('linksUteisApp')
-    .component('componenteLinksUteis', getOptionsComponenteExemplo());

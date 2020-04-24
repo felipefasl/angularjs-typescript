@@ -1,15 +1,14 @@
 // Saiba mais sobre controladores em: https://devdocs.io/angularjs~1.7/guide/controller
 
-class HomeController implements ng.IController {
+namespace app.home {
 
-    public static $inject = ['$scope', '$location'];
+    export class HomeController implements ng.IController {
 
-    constructor(private $scope: ng.IScope, private $location: ng.ILocationService) {
+        public static $inject = [];
 
-        this.$scope['rotaAtiva'] = this.$location.path();
-        console.log(this.$scope['rotaAtiva']);
+        constructor() { }
     }
-}
 
-angular.module('homeApp')
-    .controller('HomeController', HomeController);
+    angular.module('homeApp')
+        .controller('HomeController', HomeController);
+}

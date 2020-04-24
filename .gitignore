@@ -2,3 +2,5 @@ node_modules
 www
 .tscache
 .vscode
+coverage
+package-lock.json

@@ -22,7 +22,7 @@ module.exports = (grunt) => {
                     base: buildDir,
                     hostname: '*',
                     middleware: (connect, options, middlewares) => {
-                        
+
                         middlewares.unshift((req, res, next) => {
 
                             res.setHeader('Access-Control-Allow-Origin', '*');
@@ -73,6 +73,12 @@ module.exports = (grunt) => {
                 ]
             }
         },
+        // https://github.com/karma-runner/grunt-karma
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js'
+            }
+        }
     });
 
     // Carregamento de plugins do grunt
@@ -82,11 +88,12 @@ module.exports = (grunt) => {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ts');
     grunt.loadNpmTasks('grunt-tslint');
+    grunt.loadNpmTasks('grunt-karma');
 
     grunt.registerTask(
         'fastbuild',
         'Compila todos os assets e copia os arquivos para o diretório de build.',
-        ['clean', 'tslint', 'ts', 'copy']
+        ['clean', 'tslint', 'karma', 'ts', 'copy']
     );
 
     // default - Tarefa executada localmente ao executar o comando "grunt"

@@ -2,7 +2,7 @@
 <!-- Saiba mais sobre bootstrap aqui: https://getbootstrap.com.br/docs/4.1 -->
 
 <!-- Referências angularjs: 
-    ng-class : https://devdocs.io/angularjs~1.7/api/ng/directive/ngclass
+    ngRoute : https://devdocs.io/angularjs~1.7/api/ngroute
 -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -11,12 +11,12 @@
 
         <ul class="navbar-nav mr-auto">
 
-            <li class="nav-item" ng-class="{'active': rotaAtual==='/'}">
-                <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home <span class="sr-only">(página atual)</span></a>
             </li>
 
-            <li class="nav-item" ng-class="{'active': rotaAtual==='/links-uteis'}">
-                <a class="nav-link" href="#links-uteis">Links Úteis</a>
+            <li class="nav-item">
+                <a class="nav-link" href="/links-uteis">Links Úteis</a>
             </li>
            
         </ul>

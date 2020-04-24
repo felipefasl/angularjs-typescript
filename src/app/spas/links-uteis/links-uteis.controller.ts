@@ -1,26 +1,27 @@
 // Saiba mais sobre controladores em: https://devdocs.io/angularjs~1.7/guide/controller
 
-class LinksUteisController implements ng.IController {
+namespace app.links_uteis {
 
-    public titulo: string;
-    public listaLinks: { descricao: string, caminho: string }[];
+    export class LinksUteisController implements ng.IController {
 
-    public static $inject = ['$scope', '$location'];
+        public titulo: string;
+        public listaLinks: { descricao: string, caminho: string }[];
 
-    constructor(private $scope: ng.IScope, private $location: ng.ILocationService) { }
+        public static $inject = [];
 
-    $onInit() {
+        constructor() { }
 
-        this.$scope['rotaAtual'] = this.$location.path();
+        $onInit() {
 
-        this.titulo = 'Links Úteis';
-        this.listaLinks = [
-            { descricao: 'AngularJS', caminho: 'https://devdocs.io/angularjs' },
-            { descricao: 'TypeScript', caminho: 'https://www.typescriptlang.org/' },
-            { descricao: 'AngularJS + TypeScript', caminho: 'https://codepen.io/martinmcwhorter/post/angularjs-1-x-with-typescript-or-es6-best-practices' }
-        ];
+            this.titulo = 'Links Úteis';
+            this.listaLinks = [
+                { descricao: 'AngularJS', caminho: 'https://devdocs.io/angularjs' },
+                { descricao: 'TypeScript', caminho: 'https://www.typescriptlang.org/' },
+                { descricao: 'AngularJS + TypeScript', caminho: 'https://codepen.io/martinmcwhorter/post/angularjs-1-x-with-typescript-or-es6-best-practices' }
+            ];
+        }
     }
-}
 
-angular.module('linksUteisApp')
-    .controller('LinksUteisController', LinksUteisController);
+    angular.module('linksUteisApp')
+        .controller('LinksUteisController', LinksUteisController);
+}

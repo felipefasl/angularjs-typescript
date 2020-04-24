@@ -1,2 +1,4 @@
+namespace app.home {
 
-angular.module('homeApp', []);
+    angular.module('homeApp', []);
+}
