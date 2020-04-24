@@ -7,14 +7,7 @@ O projeto segue um padrão de organização de arquivos para facilitar o compart
 ```javascript
 src // Pasta Raiz do projeto
 | -- [+]app // Pasta Raiz dos códigos
-|     | -- [+]components // Pasta contendo os componentes compartilhados entre spas
-|     | -- [+]entities // Pasta contendo todas as entidades do projeto(interfaces, enums, classes)
-|     | -- [+]scripts // Pasta contendo contendo todos os scripts **static's**(somente código ts) ou **não**(codigo ts + angular) 
-|     | -- [+]services // Pasta contendo todos os serviços consumidos pelo projeto
-|     |     | -- [+]utils // Pasta contendo serviços estáticos úteis (não-angularjs e apenas typescript)
-|     |     | // Serviços globais do projeto
 |     | -- [+]spas // Pasta contendo todas as Sigle Page Applications do contexto
-| -- [+]assets // Pasta de ativos do projeto(ex: imagens, .json, .txt, .pdf)
 ```
 
 ## Informações importantes
@@ -33,12 +26,12 @@ A tipagem é um recurso para auxiliar o desenvolvedor identificar erros em tempo
 
 *Dica: Use nomes consistentes para todos os componentes seguindo um padrão que descreva a funcionalidade do componente e seu tipo (ex: algum-nome.controller.ts).*
 
-### Modules
+### Apps
 
 | Tipo  | Recomendações | Exemplo |
 | ------ | ------ | ------ | 
-| arquivo TS | contém o sufixo **.module** | algum-nome.module.ts |
-| construtor angularjs  | uso do lowerCamelCase com o sufixo **Module** | ``angular.module('algumNomeModule', [])`` |
+| arquivo TS | contém o sufixo **.app** | algum-nome.module.ts |
+| construtor angularjs  | uso do lowerCamelCase com o sufixo **App** | ``angular.module('algumNomeApp', [])`` |
 
 ### Controllers
 

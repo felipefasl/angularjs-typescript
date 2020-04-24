@@ -34,10 +34,5 @@
   },
   "main": "Gruntfile.js",
   "author": "Felipe Lima <linkedin.com/in/felipeaslima>",
-  "license": "ISC",
-  "dependencies": {
-    "@popperjs/core": "^2.3.3",
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.0.0"
-  }
+  "license": "ISC"
 }
