@@ -1,6 +1,6 @@
 {
   "name": "angularjs-typescript",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Projeto FRONT-END Angularjs+Typescript com exemplos e explicações.",
   "scripts": {
     "test": "karma start karma.conf.js"
