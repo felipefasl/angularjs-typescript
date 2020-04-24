@@ -1,6 +1,12 @@
 # angularjs-typescript
 Projeto Angularjs+Typescript com exemplos e explicações.
 
+## Versões
+
+| Versão | Notas | Extras |
+| ------ | ------ | ------ | 
+| 1.0.0 | Apps, Rotas, Controladores, Componentes | Bootstrap, fontawesome |
+
 ## Estrutura
 O projeto segue um padrão de organização de arquivos para facilitar o compartilhamento de código e otimização na manutenção.
 
