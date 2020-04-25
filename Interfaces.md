@@ -123,7 +123,7 @@ let carro: Carro = {
 };
 
 carro.marca = 'Honda'; // Ok
-carro.ano = '2019';    // Erro, a marca já foi definida anteriormente como 'Toyota'
+carro.ano = '2019';    // Erro, o ano já foi definido anteriormente como '2020'
 ```
 
 ## Herdando Interfaces
