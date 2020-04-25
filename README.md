@@ -1,7 +1,7 @@
 # angularjs-typescript
 Projeto Angularjs+Typescript com exemplos e explicações.
 
-[Por que usar TypeScript?](Typescript.md)
+[Por que usar TypeScript?](Typescript.md#por-que-usar-typescript)
 
 ## Versões
 
