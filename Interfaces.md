@@ -168,3 +168,5 @@ let pessoa: Pessoa = {
     genero: "Masculino"
 };
 ```
+
+Mais informações [aqui](https://www.typescriptlang.org/docs/handbook/interfaces.html)!
